@@ -8,6 +8,7 @@ function backthisclose() {
     document.querySelector(".back-this-popup").style.display = "none";
 }
 
+
 // Selecionar itens no forms do PopUp
 
 var noReward = document.querySelector('.no-reward');
@@ -81,3 +82,51 @@ bookmarkv.addEventListener("click", () => {
         circle.style.fill = "rgb(60, 180, 172)";
     }
 })
+
+// Abrir popup de confirmação
+
+var inputMoney = document.querySelectorAll('.money-pledge');
+var buttonMoney1 = document.querySelector('.continue-button1');
+var buttonMoney2 = document.querySelector('.continue-button2');
+var buttonMoney3 = document.querySelector('.continue-button3');
+
+var confirmationPopup = document.querySelector('.pop-up-confirmacao');
+
+buttonMoney1.addEventListener("click", () => {
+    for (let index = 0; index < inputMoney.length; index++) {
+        const element = inputMoney[index];
+        if (element.value != "") {
+            backthisclose();
+            element.value = "";
+            confirmationPopup.style.display = "block";
+        }
+    }
+});
+
+buttonMoney2.addEventListener("click", () => {
+    for (let index = 0; index < inputMoney.length; index++) {
+        const element = inputMoney[index];
+        if (element.value != "" && element.value >= 25) {
+            backthisclose();
+            element.value = "";
+            confirmationPopup.style.display = "block";
+        }
+    }
+});
+
+buttonMoney3.addEventListener("click", () => {
+    for (let index = 0; index < inputMoney.length; index++) {
+        const element = inputMoney[index];
+        if (element.value != "" && element.value >= 75) {
+            backthisclose();
+            element.value = "";
+            confirmationPopup.style.display = "block";
+        }
+    }
+});
+
+// Fechar Popup Confirmação
+
+function closeconfirmacao() {
+    document.querySelector(".pop-up-confirmacao").style.display = "none";
+}

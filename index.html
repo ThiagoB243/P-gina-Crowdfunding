@@ -31,12 +31,13 @@
                 <a class="dropdown-item" href="#">Discover</a>
                 <a class="dropdown-item" href="#">Get Started</a>
             </div>
+
         </div>
     </div>
 
     <div class="back-this-popup">
         <div class="back-this-popup-top">
-            <h1>Back this project</h1>
+            <div>Back this project</div>
             <button id="close-popup-button" onclick="backthisclose()">X</button>
         </div>
         <p>Back this project Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
@@ -44,56 +45,84 @@
         <div class="pledges">
             <form>
                 <div class="no-reward">
-                    <input id="no-reward-stand" type="radio" name="radio">
-                    <label class="titles"> Pledge with no reward</label>
+                    <div class="space">
+                        <input id="no-reward-stand" type="radio" name="radio">
+                        <label class="titles"> Pledge with no reward</label>
+                    </div>
+
                     <p> Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
                     <div class="enter-pledge1">
-                        <hr>
+                        <hr class="pop-hr">
                         <div class="title-pledge">Enter your pledge</div>
                         <div class="dollar">$</div>
                         <input type="number" class="money-pledge">
-                        <button class="continue-button">Continue</button>
+                        <button type="button" class="continue-button1">Continue</button>
                     </div>
 
                 </div>
                 <div class="bambo-stand-pop">
-                    <input id="bambo-stand" type="radio" name="radio">
-                    <label class="titles"> Bamboo Stand </label>
-                    <div class="secondary-title">Pledge $25 or more</div>
+                    <div class="space">
+                        <input id="bambo-stand" type="radio" name="radio">
+                        <label class="titles"> Bamboo Stand </label>
+                        <div class="secondary-title">Pledge $25 or more</div>
+                    </div>
+
+
                     <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
                     <h2>101 left</h2>
                     <div class="enter-pledge2">
-                        <hr>
+                        <hr class="pop-hr">
                         <div class="title-pledge">Enter your pledge</div>
                         <i class="fas fa-dollar-sign"></i>
                         <input type="number" class="money-pledge">
-                        <button class="continue-button">Continue</button>
+                        <button type="button" class="continue-button2">Continue</button>
                     </div>
                 </div>
                 <div class="black-stand-pop">
-                    <input id="black-stand" type="radio" name="radio">
-                    <label class="titles">Black Edition Stand </label>
-                    <div class="secondary-title">Pledge $75 or more</div>
+                    <div class="space">
+                        <input id="black-stand" type="radio" name="radio">
+                        <label class="titles">Black Edition Stand </label>
+                        <div class="secondary-title">Pledge $75 or more</div>
+                    </div>
+
+
                     <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
                     <h2>64 left</h2>
                     <div class="enter-pledge3">
-                        <hr>
+                        <hr class="pop-hr">
                         <div class="title-pledge">Enter your pledge</div>
                         <i class="fas fa-dollar-sign"></i>
                         <input type="number" class="money-pledge">
-                        <button class="continue-button">Continue</button>
+                        <button type="button" class="continue-button3">Continue</button>
                     </div>
                 </div>
                 <div class="mahogany-stand-pop">
-                    <input id="mahogany-stand" type="radio" name="radio" disabled>
-                    <label class="titles" for="flexRadioDisabled">Mahogany Special Edition</label>
-                    <div class="secondary-title">Pledge $200 or more</div>
+                    <div class="space">
+                        <input id="mahogany-stand" type="radio" name="radio" disabled>
+                        <label class="titles" for="flexRadioDisabled">Mahogany Special Edition</label>
+                        <div class="secondary-title">Pledge $200 or more</div>
+                    </div>
+
+
                     <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
                     <h2>0 left</h2>
                 </div>
             </form>
         </div>
     </div>
+
+    <div class="pop-up-confirmacao">
+        <img src="/images/icon-check.svg">
+        <div class="confirmation-title">
+            Thanks for your support!
+        </div>
+        <p class="confirmation-text">
+            Your pledge bring us one step closer to sharing Mastercraft Bambo Monitor Riser worldwide. You will get an e-mail once the campaign is compleated.
+        </p>
+        <button class="back-this" onclick="closeconfirmacao()">Got it!</button>
+
+    </div>
+
 
     <div class="page-body">
 

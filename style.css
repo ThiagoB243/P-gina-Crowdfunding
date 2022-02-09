@@ -172,8 +172,40 @@ hr {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 6% 0;
+}
+
+.back-this-popup p {
+    text-align: justify;
+}
+
+.pop-up-confirmacao {
+    background-color: white!important;
+    display: none;
+    position: fixed;
+    height: 60vh;
+    top: 10vh;
+    z-index: 3;
+    width: 90%;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+    left: 5%;
+    right: 5%;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.confirmation-title {
+    font-weight: bold;
+}
+
+.space {
+    margin: 0 0 10% 0;
 }
 
 .no-reward,
@@ -221,15 +253,32 @@ hr {
 .money-pledge {
     border-radius: 20px;
     width: 40%;
-    height: 6vh;
+    height: 10vh;
 }
 
-.continue-button {
+.continue-button1,
+.continue-button2,
+.continue-button3 {
     border-radius: 20px;
     background-color: hsl(176, 50%, 47%);
     border: 1px hsl(176, 72%, 28%) solid;
-    height: 6vh;
     color: white;
+    padding: 10px;
+}
+
+.pop-hr {
+    width: 100%;
+}
+
+.bambo-stand-pop h2,
+.black-stand-pop h2,
+.mahogany-stand-pop h2 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.title-pledge {
+    margin: 7% 0 7% 0;
 }
 
 .back-this {
