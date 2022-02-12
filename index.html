@@ -20,18 +20,24 @@
 <body>
 
 
+
+    <div class="background"></div>
+
     <div class="page-top">
         <h1 class="title">crowdfund</h1>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <img class="main-image" src="/images/icon-hamburger.svg">
+            <button onclick="menu()" type="button" class="menu-button">
+             <img class="main-image">
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">About</a>
-                <a class="dropdown-item" href="#">Discover</a>
-                <a class="dropdown-item" href="#">Get Started</a>
-            </div>
-
+        </div>
+        <div class="menu">
+            <ul>
+                <li><button class="list-button">About</button></li>
+                <hr class="hr-menu">
+                <li><button class="list-button">Discover</button></li>
+                <hr class="hr-menu">
+                <li><button class="list-button">Get Started</button></li>
+            </ul>
         </div>
     </div>
 
@@ -54,7 +60,6 @@
                     <div class="enter-pledge1">
                         <hr class="pop-hr">
                         <div class="title-pledge">Enter your pledge</div>
-                        <div class="dollar">$</div>
                         <input type="number" class="money-pledge">
                         <button type="button" class="continue-button1">Continue</button>
                     </div>
@@ -112,7 +117,7 @@
     </div>
 
     <div class="pop-up-confirmacao">
-        <img src="/images/icon-check.svg">
+        <img class="confirmation-image" src="/images/icon-check.svg">
         <div class="confirmation-title">
             Thanks for your support!
         </div>
@@ -185,7 +190,7 @@
                     <h1> 101 </h1>
                     <p class="left">left </p>
                 </div>
-                <button class="select-reward">Select Reward</button>
+                <button onclick="backthispopupbambo()" class="select-reward">Select Reward</button>
             </div>
 
             <div class="black-stand">
@@ -197,7 +202,7 @@
                     <h1>64</h1>
                     <p class="left">left</p>
                 </div>
-                <button class="select-reward">Select Reward</button>
+                <button onclick="backthispopupblack()" class="select-reward">Select Reward</button>
             </div>
 
             <div class="mahogany-stand">

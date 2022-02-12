@@ -2,10 +2,12 @@
 
 function backthispopup() {
     document.querySelector(".back-this-popup").style.display = "block";
+    document.querySelector(".background").style.display = "block";
 }
 
 function backthisclose() {
     document.querySelector(".back-this-popup").style.display = "none";
+    document.querySelector(".background").style.display = "none";
 }
 
 
@@ -99,6 +101,7 @@ buttonMoney1.addEventListener("click", () => {
             backthisclose();
             element.value = "";
             confirmationPopup.style.display = "block";
+            document.querySelector(".background").style.display = "block";
         }
     }
 });
@@ -110,6 +113,7 @@ buttonMoney2.addEventListener("click", () => {
             backthisclose();
             element.value = "";
             confirmationPopup.style.display = "block";
+            document.querySelector(".background").style.display = "block";
         }
     }
 });
@@ -121,6 +125,7 @@ buttonMoney3.addEventListener("click", () => {
             backthisclose();
             element.value = "";
             confirmationPopup.style.display = "block";
+            document.querySelector(".background").style.display = "block";
         }
     }
 });
@@ -129,4 +134,57 @@ buttonMoney3.addEventListener("click", () => {
 
 function closeconfirmacao() {
     document.querySelector(".pop-up-confirmacao").style.display = "none";
+    document.querySelector(".background").style.display = "none";
+}
+
+// Abrir PopUp com opção já selecionada
+
+function backthispopupbambo() {
+    document.querySelector(".back-this-popup").style.display = "block";
+    document.querySelector(".background").style.display = "block";
+    enterPledge1.style.display = "none";
+    enterPledge2.style.display = "block";
+    enterPledge3.style.display = "none";
+    bamboStand.style.border = "2px solid hsl(176, 50%, 47%)";
+    noReward.style.border = "1px solid gray";
+    blackStand.style.border = "1px solid gray";
+
+    if (inputBamboStand.checked == false) {
+        inputNoReward.checked = false;
+        inputBamboStand.checked = true;
+        inputBlackStand.checked = false;
+    }
+}
+
+function backthispopupblack() {
+    document.querySelector(".back-this-popup").style.display = "block";
+    document.querySelector(".background").style.display = "block";
+    enterPledge1.style.display = "none";
+    enterPledge2.style.display = "none";
+    enterPledge3.style.display = "block";
+    blackStand.style.border = "2px solid hsl(176, 50%, 47%)";
+    noReward.style.border = "1px solid gray";
+    bamboStand.style.border = "1px solid gray";
+
+    if (inputBlackStand.checked == false) {
+        inputNoReward.checked = false;
+        inputBamboStand.checked = false;
+        inputBlackStand.checked = true;
+    }
+}
+
+// Abrir Menu
+var show = document.querySelector(".menu");
+
+function menu() {
+    if (show.style.display == "none") {
+        document.querySelector(".menu").style.display = "block";
+        document.querySelector(".background").style.display = "block";
+        document.querySelector(".main-image").style.background = "url('/images/icon-close-menu') no-repeat";
+
+    } else {
+        document.querySelector(".menu").style.display = "none";
+        document.querySelector(".background").style.display = "none";
+        document.querySelector(".main-image").style.background = "url('/images/icon-hamburger.svg') no-repeat";
+    }
 }
