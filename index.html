@@ -21,14 +21,12 @@
 
 
 
-    <div class="background"></div>
+    <div class="background" style="display: none;"></div>
 
     <div class="page-top">
         <h1 class="title">crowdfund</h1>
         <div class="dropdown">
-            <button onclick="menu()" type="button" class="menu-button">
-             <img class="main-image">
-            </button>
+            <div class="main-image" onclick="menu()"></div>
         </div>
         <div class="menu">
             <ul>
@@ -141,12 +139,14 @@
                 <button class="back-this" onclick="backthispopup()">Back this project</button>
                 <div class="bookmark-group">
                     <div class="bookmark">
+
                         <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
                                 <circle fill="hsl(0, 0%, 48%)" cx="28" cy="28" r="28"/>
                                 <path fill="white" d="M23 19v18l5-5.058L33 37V19z"/>
                             </g>
                         </svg>
+                        <div class="bookmark-text">Bookmark</div>
                     </div>
                 </div>
             </div>

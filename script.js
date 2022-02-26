@@ -74,15 +74,21 @@ blackStand.addEventListener("click", () => {
 
 var bookmarkv = document.querySelector('.bookmark');
 var circle = document.querySelector('circle');
+var bookmarkText = document.querySelector('.bookmark-text');
 
 bookmarkv.addEventListener("click", () => {
     if (circle.style.fill == "") {
         circle.style.fill = "rgb(60, 180, 172)";
+        bookmarkText.innerHTML = "Bookmarked";
     } else if (circle.style.fill == "rgb(60, 180, 172)") {
         circle.style.fill = "rgb(122, 122, 122)";
+        bookmarkText.innerHTML = "Bookmark";
     } else {
         circle.style.fill = "rgb(60, 180, 172)";
+        bookmarkText.innerHTML = "Bookmarked";
     }
+
+
 })
 
 // Abrir popup de confirmação
@@ -180,7 +186,7 @@ function menu() {
     if (show.style.display == "none") {
         document.querySelector(".menu").style.display = "block";
         document.querySelector(".background").style.display = "block";
-        document.querySelector(".main-image").style.background = "url('/images/icon-close-menu') no-repeat";
+        document.querySelector(".main-image").style.background = "url('/images/icon-close-menu.svg') no-repeat";
 
     } else {
         document.querySelector(".menu").style.display = "none";

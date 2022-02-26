@@ -41,8 +41,10 @@
     .main-image {
         background: url('/images/icon-hamburger.svg') no-repeat;
         border: none;
-        width: 17px;
+        width: 40px;
         height: 20px;
+        margin-top: 70%;
+        background-size: contain!important;
     }
     
     .title {
@@ -61,11 +63,6 @@
     
     .dropdown {
         align-items: center;
-    }
-    
-    .menu-button {
-        border: none;
-        background: none;
     }
     
     .logo {
@@ -88,6 +85,10 @@
     
     .bookmark {
         cursor: pointer;
+    }
+    
+    .bookmark-text {
+        display: none;
     }
     
     .information {
@@ -209,7 +210,7 @@
         display: none;
         color: gray;
         position: fixed;
-        height: 85vh;
+        height: 50vh;
         top: 10vh;
         z-index: 3;
         width: 70%;
@@ -340,7 +341,7 @@
         position: absolute;
         text-align: left;
         font-weight: bold;
-        height: 33vh;
+        height: 26vh;
         top: 12vh;
         left: 5%;
         right: 5%;
@@ -376,4 +377,46 @@
     .hr-menu {
         width: 100%;
         margin: 0;
+    }
+    
+    @media (min-width:600px) {
+        .page-body {
+            margin: -10% 15% 15% 15%;
+        }
+        .page-top {
+            background-size: 100% 100%;
+        }
+        .bookmark-group {
+            background-color: hsl(0, 10%, 88%);
+            border-radius: 30px;
+        }
+        .bookmark {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .bookmark-text {
+            display: flex;
+            margin: 4px;
+        }
+        .back-this-popup {
+            width: 60%;
+            left: 25%;
+            right: 25%;
+        }
+        .no-reward,
+        .bambo-stand-pop,
+        .mahogany-stand-pop,
+        .black-stand-pop {
+            padding: 4%;
+        }
+        .space {
+            margin: 0 0 5% 0
+        }
+        .title-pledge {
+            margin: 3% 0 3% 0;
+        }
+        .money-pledge {
+            height: 7vh;
+        }
     }
